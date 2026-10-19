@@ -77,3 +77,6 @@ Same output: identical bytes to the original on 7 inputs x 3 flag sets (incl. an
 
 ## License
 MIT. Analysis only; not financial advice. R:R is gross and excludes fees, spread and slippage.
+
+## Related tools
+- All tools, one install pattern: [github.com/Dodai0419](https://github.com/Dodai0419)
