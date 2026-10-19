@@ -1,0 +1,1 @@
+{"name":"ict-scan-fast","owner":{"name":"Dodai0419"},"plugins":[{"name":"ict-scan-fast","source":"./","description":"Scan OHLCV candles for ICT setups in near-linear time. Same JSON as ict-trading-model, no tzdata needed."}]}

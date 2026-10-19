@@ -1,0 +1,1 @@
+{"name":"ict-scan-fast","description":"Scan OHLCV candles for ICT setups in near-linear time. Same JSON as ict-trading-model, no tzdata needed.","version":"0.1.0","author":{"name":"Dodai0419"}}

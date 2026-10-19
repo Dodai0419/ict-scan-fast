@@ -1,0 +1,2392 @@
+{
+  "meta": {
+    "instrument": "SYN",
+    "timeframe": "5m",
+    "candle_count": 400,
+    "first_candle": "2026-03-01T00:00:00Z",
+    "last_candle": "2026-03-02T09:15:00Z",
+    "timezone_for_sessions": "America/New_York"
+  },
+  "parameters": {
+    "swing_width": 2,
+    "sweep_lookback": 80,
+    "setup_lookahead": 12,
+    "atr_period": 14,
+    "displacement_body_multiple": 1.5,
+    "displacement_atr_multiple": 1.0,
+    "minimum_rr": 2.0,
+    "direction": "auto"
+  },
+  "counts": {
+    "swings": 108,
+    "strict_fvgs": 88,
+    "liquidity_sweeps": 44,
+    "candidates": 44
+  },
+  "latest_candidate": {
+    "mechanical_status": "developing",
+    "final_status_requires_manual_context": true,
+    "reason": "waiting for: closed_candle_mss, retrace_observed",
+    "direction": "short",
+    "sweep": {
+      "direction": "short",
+      "kind": "buyside_sweep",
+      "index": 390,
+      "time": "2026-03-02T08:30:00Z",
+      "ny_time": "2026-03-02T03:30:00-05:00",
+      "session": "london_focus",
+      "extreme": 74.31,
+      "reference": {
+        "kind": "high",
+        "index": 387,
+        "price": 73.59,
+        "time": "2026-03-02T08:15:00Z"
+      }
+    },
+    "displacement_fvg": {
+      "direction": "bearish",
+      "start_index": 396,
+      "middle_index": 397,
+      "end_index": 398,
+      "time": "2026-03-02T09:05:00Z",
+      "zone": [
+        74.78,
+        75.36
+      ],
+      "ce": 75.07,
+      "size": 0.5799999999999983,
+      "body_multiple": 1.8133333333333137,
+      "range_atr": 1.3263964950711955
+    },
+    "mss": {
+      "reference": {
+        "kind": "low",
+        "index": 389,
+        "price": 71.64,
+        "time": "2026-03-02T08:25:00Z"
+      },
+      "break_index": null,
+      "break_time": null,
+      "break_close": null
+    },
+    "dealing_range": {
+      "low": 72.37,
+      "high": 76.62,
+      "equilibrium": 74.495,
+      "ote_zone": [
+        75.00500000000001,
+        75.7275
+      ],
+      "fvg_ote_overlap": true
+    },
+    "entry": {
+      "zone": [
+        74.78,
+        75.36
+      ],
+      "ce": 75.07,
+      "retest_index": null,
+      "retest_time": null
+    },
+    "invalidation": {
+      "structural_level": 74.31,
+      "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+      "crossed_index": null,
+      "crossed_time": null
+    },
+    "target": {
+      "kind": "low",
+      "index": 389,
+      "price": 71.64,
+      "time": "2026-03-02T08:25:00Z"
+    },
+    "gross_rr_to_candidate_target": 4.513157894736886,
+    "minimum_rr": 2.0,
+    "checks": {
+      "meaningful_sweep": true,
+      "displacement_and_strict_fvg": true,
+      "closed_candle_mss": false,
+      "correct_premium_discount_side": true,
+      "retrace_observed": false,
+      "minimum_rr": true
+    }
+  },
+  "candidates": [
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: closed_candle_mss",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 269,
+        "time": "2026-03-01T22:25:00Z",
+        "ny_time": "2026-03-01T17:25:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.89,
+        "reference": {
+          "kind": "low",
+          "index": 260,
+          "price": 63.46,
+          "time": "2026-03-01T21:40:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bullish",
+        "start_index": 268,
+        "middle_index": 269,
+        "end_index": 270,
+        "time": "2026-03-01T22:25:00Z",
+        "zone": [
+          63.5,
+          63.9
+        ],
+        "ce": 63.7,
+        "size": 0.3999999999999986,
+        "body_multiple": 4.419999999999924,
+        "range_atr": 2.240812379110253
+      },
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 262,
+          "price": 67.32,
+          "time": "2026-03-01T21:50:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 62.89,
+        "high": 66.2,
+        "equilibrium": 64.545,
+        "ote_zone": [
+          63.585100000000004,
+          64.1478
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          63.5,
+          63.9
+        ],
+        "ce": 63.7,
+        "retest_index": 271,
+        "retest_time": "2026-03-01T22:35:00Z"
+      },
+      "invalidation": {
+        "structural_level": 62.89,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "high",
+        "index": 252,
+        "price": 66.34,
+        "time": "2026-03-01T21:00:00Z"
+      },
+      "gross_rr_to_candidate_target": 3.2592592592592506,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": true,
+        "retrace_observed": true,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 273,
+        "time": "2026-03-01T22:45:00Z",
+        "ny_time": "2026-03-01T17:45:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.87,
+        "reference": {
+          "kind": "low",
+          "index": 269,
+          "price": 62.89,
+          "time": "2026-03-01T22:25:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bullish",
+        "start_index": 279,
+        "middle_index": 280,
+        "end_index": 281,
+        "time": "2026-03-01T23:20:00Z",
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "size": 0.020000000000003126,
+        "body_multiple": 1.6,
+        "range_atr": 1.5180722891566287
+      },
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 269,
+          "price": 66.2,
+          "time": "2026-03-01T22:25:00Z"
+        },
+        "break_index": 282,
+        "break_time": "2026-03-01T23:30:00Z",
+        "break_close": 67.76
+      },
+      "dealing_range": {
+        "low": 62.19,
+        "high": 68.06,
+        "equilibrium": 65.125,
+        "ote_zone": [
+          63.4227,
+          64.4206
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 62.87,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 299,
+        "crossed_time": "2026-03-02T00:55:00Z"
+      },
+      "target": {
+        "kind": "high",
+        "index": 242,
+        "price": 70.45,
+        "time": "2026-03-01T20:10:00Z"
+      },
+      "gross_rr_to_candidate_target": 15.478260869565199,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 274,
+        "time": "2026-03-01T22:50:00Z",
+        "ny_time": "2026-03-01T17:50:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.59,
+        "reference": {
+          "kind": "low",
+          "index": 269,
+          "price": 62.89,
+          "time": "2026-03-01T22:25:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bullish",
+        "start_index": 279,
+        "middle_index": 280,
+        "end_index": 281,
+        "time": "2026-03-01T23:20:00Z",
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "size": 0.020000000000003126,
+        "body_multiple": 1.6,
+        "range_atr": 1.5180722891566287
+      },
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 269,
+          "price": 66.2,
+          "time": "2026-03-01T22:25:00Z"
+        },
+        "break_index": 282,
+        "break_time": "2026-03-01T23:30:00Z",
+        "break_close": 67.76
+      },
+      "dealing_range": {
+        "low": 62.19,
+        "high": 68.06,
+        "equilibrium": 65.125,
+        "ote_zone": [
+          63.4227,
+          64.4206
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 62.59,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 299,
+        "crossed_time": "2026-03-02T00:55:00Z"
+      },
+      "target": {
+        "kind": "high",
+        "index": 242,
+        "price": 70.45,
+        "time": "2026-03-01T20:10:00Z"
+      },
+      "gross_rr_to_candidate_target": 9.621621621621694,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 278,
+        "time": "2026-03-01T23:10:00Z",
+        "ny_time": "2026-03-01T18:10:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.19,
+        "reference": {
+          "kind": "low",
+          "index": 274,
+          "price": 62.59,
+          "time": "2026-03-01T22:50:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bullish",
+        "start_index": 279,
+        "middle_index": 280,
+        "end_index": 281,
+        "time": "2026-03-01T23:20:00Z",
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "size": 0.020000000000003126,
+        "body_multiple": 1.6,
+        "range_atr": 1.5180722891566287
+      },
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 269,
+          "price": 66.2,
+          "time": "2026-03-01T22:25:00Z"
+        },
+        "break_index": 282,
+        "break_time": "2026-03-01T23:30:00Z",
+        "break_close": 67.76
+      },
+      "dealing_range": {
+        "low": 62.19,
+        "high": 68.06,
+        "equilibrium": 65.125,
+        "ote_zone": [
+          63.4227,
+          64.4206
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          63.32,
+          63.34
+        ],
+        "ce": 63.33,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 62.19,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 299,
+        "crossed_time": "2026-03-02T00:55:00Z"
+      },
+      "target": {
+        "kind": "high",
+        "index": 242,
+        "price": 70.45,
+        "time": "2026-03-01T20:10:00Z"
+      },
+      "gross_rr_to_candidate_target": 6.24561403508772,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 285,
+        "time": "2026-03-01T23:45:00Z",
+        "ny_time": "2026-03-01T18:45:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 68.23,
+        "reference": {
+          "kind": "high",
+          "index": 282,
+          "price": 68.06,
+          "time": "2026-03-01T23:30:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 292,
+        "middle_index": 293,
+        "end_index": 294,
+        "time": "2026-03-02T00:25:00Z",
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "size": 2.9499999999999886,
+        "body_multiple": 9.806451612903203,
+        "range_atr": 2.7326203208556072
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 278,
+          "price": 62.19,
+          "time": "2026-03-01T23:10:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 65.31,
+        "high": 70.42,
+        "equilibrium": 67.86500000000001,
+        "ote_zone": [
+          68.4782,
+          69.3469
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 68.23,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 260,
+        "price": 63.46,
+        "time": "2026-03-01T21:40:00Z"
+      },
+      "gross_rr_to_candidate_target": 5.4026845637583545,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": false,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 286,
+        "time": "2026-03-01T23:50:00Z",
+        "ny_time": "2026-03-01T18:50:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 68.79,
+        "reference": {
+          "kind": "high",
+          "index": 282,
+          "price": 68.06,
+          "time": "2026-03-01T23:30:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 292,
+        "middle_index": 293,
+        "end_index": 294,
+        "time": "2026-03-02T00:25:00Z",
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "size": 2.9499999999999886,
+        "body_multiple": 9.806451612903203,
+        "range_atr": 2.7326203208556072
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 278,
+          "price": 62.19,
+          "time": "2026-03-01T23:10:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 65.31,
+        "high": 70.42,
+        "equilibrium": 67.86500000000001,
+        "ote_zone": [
+          68.4782,
+          69.3469
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 68.79,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 260,
+        "price": 63.46,
+        "time": "2026-03-01T21:40:00Z"
+      },
+      "gross_rr_to_candidate_target": 3.0842911877394465,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": false,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: minimum_rr",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 290,
+        "time": "2026-03-02T00:10:00Z",
+        "ny_time": "2026-03-01T19:10:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 69.23,
+        "reference": {
+          "kind": "high",
+          "index": 286,
+          "price": 68.79,
+          "time": "2026-03-01T23:50:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 292,
+        "middle_index": 293,
+        "end_index": 294,
+        "time": "2026-03-02T00:25:00Z",
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "size": 2.9499999999999886,
+        "body_multiple": 9.806451612903203,
+        "range_atr": 2.7326203208556072
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 278,
+          "price": 62.19,
+          "time": "2026-03-01T23:10:00Z"
+        },
+        "break_index": 300,
+        "break_time": "2026-03-02T01:00:00Z",
+        "break_close": 61.97
+      },
+      "dealing_range": {
+        "low": 61.48,
+        "high": 70.42,
+        "equilibrium": 65.95,
+        "ote_zone": [
+          67.0228,
+          68.54260000000001
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "retest_index": 340,
+        "retest_time": "2026-03-02T04:20:00Z"
+      },
+      "invalidation": {
+        "structural_level": 69.23,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": true,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: minimum_rr",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 293,
+        "time": "2026-03-02T00:25:00Z",
+        "ny_time": "2026-03-01T19:25:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 70.42,
+        "reference": {
+          "kind": "high",
+          "index": 286,
+          "price": 68.79,
+          "time": "2026-03-01T23:50:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 292,
+        "middle_index": 293,
+        "end_index": 294,
+        "time": "2026-03-02T00:25:00Z",
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "size": 2.9499999999999886,
+        "body_multiple": 9.806451612903203,
+        "range_atr": 2.7326203208556072
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 278,
+          "price": 62.19,
+          "time": "2026-03-01T23:10:00Z"
+        },
+        "break_index": 300,
+        "break_time": "2026-03-02T01:00:00Z",
+        "break_close": 61.97
+      },
+      "dealing_range": {
+        "low": 61.48,
+        "high": 70.42,
+        "equilibrium": 65.95,
+        "ote_zone": [
+          67.0228,
+          68.54260000000001
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          66.01,
+          68.96
+        ],
+        "ce": 67.485,
+        "retest_index": 340,
+        "retest_time": "2026-03-02T04:20:00Z"
+      },
+      "invalidation": {
+        "structural_level": 70.42,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": true,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: displacement_and_strict_fvg, closed_candle_mss, correct_premium_discount_side, retrace_observed, minimum_rr",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 299,
+        "time": "2026-03-02T00:55:00Z",
+        "ny_time": "2026-03-01T19:55:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 61.99,
+        "reference": {
+          "kind": "low",
+          "index": 278,
+          "price": 62.19,
+          "time": "2026-03-01T23:10:00Z"
+        }
+      },
+      "displacement_fvg": null,
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 298,
+          "price": 66.0,
+          "time": "2026-03-02T00:50:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 61.99,
+        "high": 65.28,
+        "equilibrium": 63.635000000000005,
+        "ote_zone": [
+          62.6809,
+          63.2402
+        ],
+        "fvg_ote_overlap": null
+      },
+      "entry": {
+        "zone": null,
+        "ce": null,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 61.99,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": false,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": null,
+        "retrace_observed": false,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "entry FVG is on the wrong side of equilibrium",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 308,
+        "time": "2026-03-02T01:40:00Z",
+        "ny_time": "2026-03-01T20:40:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.32,
+        "reference": {
+          "kind": "high",
+          "index": 305,
+          "price": 62.28,
+          "time": "2026-03-02T01:25:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 313,
+        "middle_index": 314,
+        "end_index": 315,
+        "time": "2026-03-02T02:10:00Z",
+        "zone": [
+          59.99,
+          60.74
+        ],
+        "ce": 60.365,
+        "size": 0.75,
+        "body_multiple": 2.2477876106194694,
+        "range_atr": 1.1885416666666642
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 307,
+          "price": 60.07,
+          "time": "2026-03-02T01:35:00Z"
+        },
+        "break_index": 314,
+        "break_time": "2026-03-02T02:10:00Z",
+        "break_close": 59.86
+      },
+      "dealing_range": {
+        "low": 59.59,
+        "high": 62.59,
+        "equilibrium": 61.09,
+        "ote_zone": [
+          61.45,
+          61.96
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          59.99,
+          60.74
+        ],
+        "ce": 60.365,
+        "retest_index": 316,
+        "retest_time": "2026-03-02T02:20:00Z"
+      },
+      "invalidation": {
+        "structural_level": 62.32,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": false,
+        "retrace_observed": true,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "entry FVG is on the wrong side of equilibrium",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 309,
+        "time": "2026-03-02T01:45:00Z",
+        "ny_time": "2026-03-01T20:45:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.59,
+        "reference": {
+          "kind": "high",
+          "index": 305,
+          "price": 62.28,
+          "time": "2026-03-02T01:25:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 313,
+        "middle_index": 314,
+        "end_index": 315,
+        "time": "2026-03-02T02:10:00Z",
+        "zone": [
+          59.99,
+          60.74
+        ],
+        "ce": 60.365,
+        "size": 0.75,
+        "body_multiple": 2.2477876106194694,
+        "range_atr": 1.1885416666666642
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 307,
+          "price": 60.07,
+          "time": "2026-03-02T01:35:00Z"
+        },
+        "break_index": 314,
+        "break_time": "2026-03-02T02:10:00Z",
+        "break_close": 59.86
+      },
+      "dealing_range": {
+        "low": 59.59,
+        "high": 62.59,
+        "equilibrium": 61.09,
+        "ote_zone": [
+          61.45,
+          61.96
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          59.99,
+          60.74
+        ],
+        "ce": 60.365,
+        "retest_index": 316,
+        "retest_time": "2026-03-02T02:20:00Z"
+      },
+      "invalidation": {
+        "structural_level": 62.59,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": false,
+        "retrace_observed": true,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 324,
+        "time": "2026-03-02T03:00:00Z",
+        "ny_time": "2026-03-01T22:00:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.11,
+        "reference": {
+          "kind": "high",
+          "index": 312,
+          "price": 61.81,
+          "time": "2026-03-02T02:00:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 328,
+        "middle_index": 329,
+        "end_index": 330,
+        "time": "2026-03-02T03:25:00Z",
+        "zone": [
+          61.87,
+          62.06
+        ],
+        "ce": 61.965,
+        "size": 0.19000000000000483,
+        "body_multiple": 1.6511627906976638,
+        "range_atr": 1.386223862238622
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 321,
+          "price": 57.15,
+          "time": "2026-03-02T02:45:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 60.76,
+        "high": 62.99,
+        "equilibrium": 61.875,
+        "ote_zone": [
+          62.1426,
+          62.5217
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          61.87,
+          62.06
+        ],
+        "ce": 61.965,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 62.11,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 331,
+        "crossed_time": "2026-03-02T03:35:00Z"
+      },
+      "target": {
+        "kind": "low",
+        "index": 307,
+        "price": 60.07,
+        "time": "2026-03-02T01:35:00Z"
+      },
+      "gross_rr_to_candidate_target": 13.06896551724176,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 327,
+        "time": "2026-03-02T03:15:00Z",
+        "ny_time": "2026-03-01T22:15:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 62.17,
+        "reference": {
+          "kind": "high",
+          "index": 324,
+          "price": 62.11,
+          "time": "2026-03-02T03:00:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 328,
+        "middle_index": 329,
+        "end_index": 330,
+        "time": "2026-03-02T03:25:00Z",
+        "zone": [
+          61.87,
+          62.06
+        ],
+        "ce": 61.965,
+        "size": 0.19000000000000483,
+        "body_multiple": 1.6511627906976638,
+        "range_atr": 1.386223862238622
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 321,
+          "price": 57.15,
+          "time": "2026-03-02T02:45:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 61.25,
+        "high": 62.99,
+        "equilibrium": 62.120000000000005,
+        "ote_zone": [
+          62.3288,
+          62.6246
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          61.87,
+          62.06
+        ],
+        "ce": 61.965,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 62.17,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 331,
+        "crossed_time": "2026-03-02T03:35:00Z"
+      },
+      "target": {
+        "kind": "low",
+        "index": 307,
+        "price": 60.07,
+        "time": "2026-03-02T01:35:00Z"
+      },
+      "gross_rr_to_candidate_target": 9.243902439024483,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": false,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "long",
+      "sweep": {
+        "direction": "long",
+        "kind": "sellside_sweep",
+        "index": 337,
+        "time": "2026-03-02T04:05:00Z",
+        "ny_time": "2026-03-01T23:05:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 59.01,
+        "reference": {
+          "kind": "low",
+          "index": 331,
+          "price": 59.37,
+          "time": "2026-03-02T03:35:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bullish",
+        "start_index": 336,
+        "middle_index": 337,
+        "end_index": 338,
+        "time": "2026-03-02T04:05:00Z",
+        "zone": [
+          61.82,
+          63.77
+        ],
+        "ce": 62.795,
+        "size": 1.9500000000000028,
+        "body_multiple": 9.299999999999931,
+        "range_atr": 3.762237762237762
+      },
+      "mss": {
+        "reference": {
+          "kind": "high",
+          "index": 334,
+          "price": 61.84,
+          "time": "2026-03-02T03:50:00Z"
+        },
+        "break_index": 338,
+        "break_time": "2026-03-02T04:10:00Z",
+        "break_close": 64.34
+      },
+      "dealing_range": {
+        "low": 59.01,
+        "high": 64.43,
+        "equilibrium": 61.72,
+        "ote_zone": [
+          60.1482,
+          61.0696
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          61.82,
+          63.77
+        ],
+        "ce": 62.795,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 59.01,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "high",
+        "index": 298,
+        "price": 66.0,
+        "time": "2026-03-02T00:50:00Z"
+      },
+      "gross_rr_to_candidate_target": 0.8467635402906196,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": false,
+        "retrace_observed": false,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: displacement_and_strict_fvg, closed_candle_mss, correct_premium_discount_side, retrace_observed, minimum_rr",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 356,
+        "time": "2026-03-02T05:40:00Z",
+        "ny_time": "2026-03-02T00:40:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 71.85,
+        "reference": {
+          "kind": "high",
+          "index": 353,
+          "price": 71.75,
+          "time": "2026-03-02T05:25:00Z"
+        }
+      },
+      "displacement_fvg": null,
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 355,
+          "price": 69.23,
+          "time": "2026-03-02T05:35:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 69.51,
+        "high": 71.85,
+        "equilibrium": 70.68,
+        "ote_zone": [
+          70.96079999999999,
+          71.3586
+        ],
+        "fvg_ote_overlap": null
+      },
+      "entry": {
+        "zone": null,
+        "ce": null,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 71.85,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": null,
+      "gross_rr_to_candidate_target": null,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": false,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": null,
+        "retrace_observed": false,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 359,
+        "time": "2026-03-02T05:55:00Z",
+        "ny_time": "2026-03-02T00:55:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 72.45,
+        "reference": {
+          "kind": "high",
+          "index": 353,
+          "price": 71.75,
+          "time": "2026-03-02T05:25:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 367,
+        "middle_index": 368,
+        "end_index": 369,
+        "time": "2026-03-02T06:40:00Z",
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "size": 0.6800000000000068,
+        "body_multiple": 3.4199999999999875,
+        "range_atr": 1.7307914500288895
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 355,
+          "price": 69.23,
+          "time": "2026-03-02T05:35:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 69.86,
+        "high": 73.26,
+        "equilibrium": 71.56,
+        "ote_zone": [
+          71.968,
+          72.546
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 72.45,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 233,
+        "price": 69.52,
+        "time": "2026-03-01T19:25:00Z"
+      },
+      "gross_rr_to_candidate_target": 2.2921348314606798,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 365,
+        "time": "2026-03-02T06:25:00Z",
+        "ny_time": "2026-03-02T01:25:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 72.69,
+        "reference": {
+          "kind": "high",
+          "index": 362,
+          "price": 72.26,
+          "time": "2026-03-02T06:10:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 367,
+        "middle_index": 368,
+        "end_index": 369,
+        "time": "2026-03-02T06:40:00Z",
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "size": 0.6800000000000068,
+        "body_multiple": 3.4199999999999875,
+        "range_atr": 1.7307914500288895
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 363,
+          "price": 70.76,
+          "time": "2026-03-02T06:15:00Z"
+        },
+        "break_index": 369,
+        "break_time": "2026-03-02T06:45:00Z",
+        "break_close": 70.18
+      },
+      "dealing_range": {
+        "low": 69.86,
+        "high": 73.26,
+        "equilibrium": 71.56,
+        "ote_zone": [
+          71.968,
+          72.546
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 72.69,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 233,
+        "price": 69.52,
+        "time": "2026-03-01T19:25:00Z"
+      },
+      "gross_rr_to_candidate_target": 1.8053097345132871,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": false
+      }
+    },
+    {
+      "mechanical_status": "no-trade",
+      "final_status_requires_manual_context": true,
+      "reason": "candidate target was reached before the retrace; entry is late",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 366,
+        "time": "2026-03-02T06:30:00Z",
+        "ny_time": "2026-03-02T01:30:00-05:00",
+        "session": "outside_preferred_window",
+        "extreme": 72.49,
+        "reference": {
+          "kind": "high",
+          "index": 362,
+          "price": 72.26,
+          "time": "2026-03-02T06:10:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 367,
+        "middle_index": 368,
+        "end_index": 369,
+        "time": "2026-03-02T06:40:00Z",
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "size": 0.6800000000000068,
+        "body_multiple": 3.4199999999999875,
+        "range_atr": 1.7307914500288895
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 363,
+          "price": 70.76,
+          "time": "2026-03-02T06:15:00Z"
+        },
+        "break_index": 369,
+        "break_time": "2026-03-02T06:45:00Z",
+        "break_close": 70.18
+      },
+      "dealing_range": {
+        "low": 69.86,
+        "high": 73.26,
+        "equilibrium": 71.56,
+        "ote_zone": [
+          71.968,
+          72.546
+        ],
+        "fvg_ote_overlap": false
+      },
+      "entry": {
+        "zone": [
+          71.22,
+          71.9
+        ],
+        "ce": 71.56,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 72.49,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 233,
+        "price": 69.52,
+        "time": "2026-03-01T19:25:00Z"
+      },
+      "gross_rr_to_candidate_target": 2.1935483870967984,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": true,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "invalidated",
+      "final_status_requires_manual_context": true,
+      "reason": "structural sweep extreme was crossed before a valid retest",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 387,
+        "time": "2026-03-02T08:15:00Z",
+        "ny_time": "2026-03-02T03:15:00-05:00",
+        "session": "london_focus",
+        "extreme": 73.59,
+        "reference": {
+          "kind": "high",
+          "index": 384,
+          "price": 73.32,
+          "time": "2026-03-02T08:00:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 396,
+        "middle_index": 397,
+        "end_index": 398,
+        "time": "2026-03-02T09:05:00Z",
+        "zone": [
+          74.78,
+          75.36
+        ],
+        "ce": 75.07,
+        "size": 0.5799999999999983,
+        "body_multiple": 1.8133333333333137,
+        "range_atr": 1.3263964950711955
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 375,
+          "price": 68.22,
+          "time": "2026-03-02T07:15:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 71.64,
+        "high": 76.62,
+        "equilibrium": 74.13,
+        "ote_zone": [
+          74.72760000000001,
+          75.5742
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          74.78,
+          75.36
+        ],
+        "ce": 75.07,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 73.59,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": 399,
+        "crossed_time": "2026-03-02T09:15:00Z"
+      },
+      "target": {
+        "kind": "low",
+        "index": 363,
+        "price": 70.76,
+        "time": "2026-03-02T06:15:00Z"
+      },
+      "gross_rr_to_candidate_target": 2.9121621621621743,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    },
+    {
+      "mechanical_status": "developing",
+      "final_status_requires_manual_context": true,
+      "reason": "waiting for: closed_candle_mss, retrace_observed",
+      "direction": "short",
+      "sweep": {
+        "direction": "short",
+        "kind": "buyside_sweep",
+        "index": 390,
+        "time": "2026-03-02T08:30:00Z",
+        "ny_time": "2026-03-02T03:30:00-05:00",
+        "session": "london_focus",
+        "extreme": 74.31,
+        "reference": {
+          "kind": "high",
+          "index": 387,
+          "price": 73.59,
+          "time": "2026-03-02T08:15:00Z"
+        }
+      },
+      "displacement_fvg": {
+        "direction": "bearish",
+        "start_index": 396,
+        "middle_index": 397,
+        "end_index": 398,
+        "time": "2026-03-02T09:05:00Z",
+        "zone": [
+          74.78,
+          75.36
+        ],
+        "ce": 75.07,
+        "size": 0.5799999999999983,
+        "body_multiple": 1.8133333333333137,
+        "range_atr": 1.3263964950711955
+      },
+      "mss": {
+        "reference": {
+          "kind": "low",
+          "index": 389,
+          "price": 71.64,
+          "time": "2026-03-02T08:25:00Z"
+        },
+        "break_index": null,
+        "break_time": null,
+        "break_close": null
+      },
+      "dealing_range": {
+        "low": 72.37,
+        "high": 76.62,
+        "equilibrium": 74.495,
+        "ote_zone": [
+          75.00500000000001,
+          75.7275
+        ],
+        "fvg_ote_overlap": true
+      },
+      "entry": {
+        "zone": [
+          74.78,
+          75.36
+        ],
+        "ce": 75.07,
+        "retest_index": null,
+        "retest_time": null
+      },
+      "invalidation": {
+        "structural_level": 74.31,
+        "instruction": "place any operational buffer beyond this level using venue tick/volatility data",
+        "crossed_index": null,
+        "crossed_time": null
+      },
+      "target": {
+        "kind": "low",
+        "index": 389,
+        "price": 71.64,
+        "time": "2026-03-02T08:25:00Z"
+      },
+      "gross_rr_to_candidate_target": 4.513157894736886,
+      "minimum_rr": 2.0,
+      "checks": {
+        "meaningful_sweep": true,
+        "displacement_and_strict_fvg": true,
+        "closed_candle_mss": false,
+        "correct_premium_discount_side": true,
+        "retrace_observed": false,
+        "minimum_rr": true
+      }
+    }
+  ],
+  "recent_swings": [
+    {
+      "kind": "high",
+      "index": 282,
+      "price": 68.06,
+      "time": "2026-03-01T23:30:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 286,
+      "price": 68.79,
+      "time": "2026-03-01T23:50:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 293,
+      "price": 70.42,
+      "time": "2026-03-02T00:25:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 298,
+      "price": 66.0,
+      "time": "2026-03-02T00:50:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 303,
+      "price": 59.78,
+      "time": "2026-03-02T01:15:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 305,
+      "price": 62.28,
+      "time": "2026-03-02T01:25:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 307,
+      "price": 60.07,
+      "time": "2026-03-02T01:35:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 309,
+      "price": 62.59,
+      "time": "2026-03-02T01:45:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 312,
+      "price": 61.81,
+      "time": "2026-03-02T02:00:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 321,
+      "price": 57.15,
+      "time": "2026-03-02T02:45:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 324,
+      "price": 62.11,
+      "time": "2026-03-02T03:00:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 328,
+      "price": 62.99,
+      "time": "2026-03-02T03:20:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 331,
+      "price": 59.37,
+      "time": "2026-03-02T03:35:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 334,
+      "price": 61.84,
+      "time": "2026-03-02T03:50:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 337,
+      "price": 59.01,
+      "time": "2026-03-02T04:05:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 350,
+      "price": 67.33,
+      "time": "2026-03-02T05:10:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 353,
+      "price": 71.75,
+      "time": "2026-03-02T05:25:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 355,
+      "price": 69.23,
+      "time": "2026-03-02T05:35:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 359,
+      "price": 72.45,
+      "time": "2026-03-02T05:55:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 362,
+      "price": 72.26,
+      "time": "2026-03-02T06:10:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 363,
+      "price": 70.76,
+      "time": "2026-03-02T06:15:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 367,
+      "price": 73.26,
+      "time": "2026-03-02T06:35:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 375,
+      "price": 70.1,
+      "time": "2026-03-02T07:15:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 375,
+      "price": 68.22,
+      "time": "2026-03-02T07:15:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 384,
+      "price": 73.32,
+      "time": "2026-03-02T08:00:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 387,
+      "price": 73.59,
+      "time": "2026-03-02T08:15:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 389,
+      "price": 71.64,
+      "time": "2026-03-02T08:25:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 390,
+      "price": 74.31,
+      "time": "2026-03-02T08:30:00Z"
+    },
+    {
+      "kind": "low",
+      "index": 392,
+      "price": 72.37,
+      "time": "2026-03-02T08:40:00Z"
+    },
+    {
+      "kind": "high",
+      "index": 395,
+      "price": 76.62,
+      "time": "2026-03-02T08:55:00Z"
+    }
+  ],
+  "recent_fvgs": [
+    {
+      "direction": "bearish",
+      "start_index": 264,
+      "middle_index": 265,
+      "end_index": 266,
+      "time": "2026-03-01T22:05:00Z",
+      "zone": [
+        64.62,
+        64.67
+      ],
+      "ce": 64.64500000000001,
+      "size": 0.04999999999999716
+    },
+    {
+      "direction": "bearish",
+      "start_index": 266,
+      "middle_index": 267,
+      "end_index": 268,
+      "time": "2026-03-01T22:15:00Z",
+      "zone": [
+        63.5,
+        63.54
+      ],
+      "ce": 63.519999999999996,
+      "size": 0.03999999999999915
+    },
+    {
+      "direction": "bullish",
+      "start_index": 268,
+      "middle_index": 269,
+      "end_index": 270,
+      "time": "2026-03-01T22:25:00Z",
+      "zone": [
+        63.5,
+        63.9
+      ],
+      "ce": 63.7,
+      "size": 0.3999999999999986
+    },
+    {
+      "direction": "bullish",
+      "start_index": 279,
+      "middle_index": 280,
+      "end_index": 281,
+      "time": "2026-03-01T23:20:00Z",
+      "zone": [
+        63.32,
+        63.34
+      ],
+      "ce": 63.33,
+      "size": 0.020000000000003126
+    },
+    {
+      "direction": "bullish",
+      "start_index": 281,
+      "middle_index": 282,
+      "end_index": 283,
+      "time": "2026-03-01T23:30:00Z",
+      "zone": [
+        64.23,
+        67.32
+      ],
+      "ce": 65.775,
+      "size": 3.089999999999989
+    },
+    {
+      "direction": "bearish",
+      "start_index": 292,
+      "middle_index": 293,
+      "end_index": 294,
+      "time": "2026-03-02T00:25:00Z",
+      "zone": [
+        66.01,
+        68.96
+      ],
+      "ce": 67.485,
+      "size": 2.9499999999999886
+    },
+    {
+      "direction": "bearish",
+      "start_index": 294,
+      "middle_index": 295,
+      "end_index": 296,
+      "time": "2026-03-02T00:35:00Z",
+      "zone": [
+        65.35,
+        65.41
+      ],
+      "ce": 65.38,
+      "size": 0.060000000000002274
+    },
+    {
+      "direction": "bearish",
+      "start_index": 298,
+      "middle_index": 299,
+      "end_index": 300,
+      "time": "2026-03-02T00:55:00Z",
+      "zone": [
+        62.79,
+        64.8
+      ],
+      "ce": 63.795,
+      "size": 2.009999999999998
+    },
+    {
+      "direction": "bullish",
+      "start_index": 303,
+      "middle_index": 304,
+      "end_index": 305,
+      "time": "2026-03-02T01:20:00Z",
+      "zone": [
+        61.23,
+        61.59
+      ],
+      "ce": 61.41,
+      "size": 0.36000000000000654
+    },
+    {
+      "direction": "bearish",
+      "start_index": 313,
+      "middle_index": 314,
+      "end_index": 315,
+      "time": "2026-03-02T02:10:00Z",
+      "zone": [
+        59.99,
+        60.74
+      ],
+      "ce": 60.365,
+      "size": 0.75
+    },
+    {
+      "direction": "bearish",
+      "start_index": 315,
+      "middle_index": 316,
+      "end_index": 317,
+      "time": "2026-03-02T02:20:00Z",
+      "zone": [
+        58.64,
+        59.7
+      ],
+      "ce": 59.17,
+      "size": 1.0600000000000023
+    },
+    {
+      "direction": "bullish",
+      "start_index": 320,
+      "middle_index": 321,
+      "end_index": 322,
+      "time": "2026-03-02T02:45:00Z",
+      "zone": [
+        58.87,
+        59.66
+      ],
+      "ce": 59.265,
+      "size": 0.7899999999999991
+    },
+    {
+      "direction": "bullish",
+      "start_index": 321,
+      "middle_index": 322,
+      "end_index": 323,
+      "time": "2026-03-02T02:50:00Z",
+      "zone": [
+        59.82,
+        59.89
+      ],
+      "ce": 59.855000000000004,
+      "size": 0.07000000000000028
+    },
+    {
+      "direction": "bullish",
+      "start_index": 326,
+      "middle_index": 327,
+      "end_index": 328,
+      "time": "2026-03-02T03:15:00Z",
+      "zone": [
+        61.96,
+        62.06
+      ],
+      "ce": 62.010000000000005,
+      "size": 0.10000000000000142
+    },
+    {
+      "direction": "bearish",
+      "start_index": 328,
+      "middle_index": 329,
+      "end_index": 330,
+      "time": "2026-03-02T03:25:00Z",
+      "zone": [
+        61.87,
+        62.06
+      ],
+      "ce": 61.965,
+      "size": 0.19000000000000483
+    },
+    {
+      "direction": "bearish",
+      "start_index": 330,
+      "middle_index": 331,
+      "end_index": 332,
+      "time": "2026-03-02T03:35:00Z",
+      "zone": [
+        60.77,
+        61.64
+      ],
+      "ce": 61.205,
+      "size": 0.8699999999999974
+    },
+    {
+      "direction": "bullish",
+      "start_index": 332,
+      "middle_index": 333,
+      "end_index": 334,
+      "time": "2026-03-02T03:45:00Z",
+      "zone": [
+        60.77,
+        60.84
+      ],
+      "ce": 60.80500000000001,
+      "size": 0.07000000000000028
+    },
+    {
+      "direction": "bullish",
+      "start_index": 336,
+      "middle_index": 337,
+      "end_index": 338,
+      "time": "2026-03-02T04:05:00Z",
+      "zone": [
+        61.82,
+        63.77
+      ],
+      "ce": 62.795,
+      "size": 1.9500000000000028
+    },
+    {
+      "direction": "bullish",
+      "start_index": 338,
+      "middle_index": 339,
+      "end_index": 340,
+      "time": "2026-03-02T04:15:00Z",
+      "zone": [
+        64.43,
+        65.62
+      ],
+      "ce": 65.025,
+      "size": 1.1899999999999977
+    },
+    {
+      "direction": "bullish",
+      "start_index": 342,
+      "middle_index": 343,
+      "end_index": 344,
+      "time": "2026-03-02T04:35:00Z",
+      "zone": [
+        66.84,
+        66.98
+      ],
+      "ce": 66.91,
+      "size": 0.14000000000000057
+    },
+    {
+      "direction": "bullish",
+      "start_index": 347,
+      "middle_index": 348,
+      "end_index": 349,
+      "time": "2026-03-02T05:00:00Z",
+      "zone": [
+        68.79,
+        69.32
+      ],
+      "ce": 69.055,
+      "size": 0.5299999999999869
+    },
+    {
+      "direction": "bearish",
+      "start_index": 349,
+      "middle_index": 350,
+      "end_index": 351,
+      "time": "2026-03-02T05:10:00Z",
+      "zone": [
+        68.16,
+        69.32
+      ],
+      "ce": 68.74,
+      "size": 1.1599999999999966
+    },
+    {
+      "direction": "bullish",
+      "start_index": 351,
+      "middle_index": 352,
+      "end_index": 353,
+      "time": "2026-03-02T05:20:00Z",
+      "zone": [
+        68.16,
+        69.83
+      ],
+      "ce": 68.995,
+      "size": 1.6700000000000017
+    },
+    {
+      "direction": "bullish",
+      "start_index": 355,
+      "middle_index": 356,
+      "end_index": 357,
+      "time": "2026-03-02T05:40:00Z",
+      "zone": [
+        70.96,
+        71.1
+      ],
+      "ce": 71.03,
+      "size": 0.14000000000000057
+    },
+    {
+      "direction": "bearish",
+      "start_index": 367,
+      "middle_index": 368,
+      "end_index": 369,
+      "time": "2026-03-02T06:40:00Z",
+      "zone": [
+        71.22,
+        71.9
+      ],
+      "ce": 71.56,
+      "size": 0.6800000000000068
+    },
+    {
+      "direction": "bearish",
+      "start_index": 368,
+      "middle_index": 369,
+      "end_index": 370,
+      "time": "2026-03-02T06:45:00Z",
+      "zone": [
+        70.54,
+        71.1
+      ],
+      "ce": 70.82,
+      "size": 0.5599999999999881
+    },
+    {
+      "direction": "bullish",
+      "start_index": 379,
+      "middle_index": 380,
+      "end_index": 381,
+      "time": "2026-03-02T07:40:00Z",
+      "zone": [
+        69.63,
+        70.38
+      ],
+      "ce": 70.005,
+      "size": 0.75
+    },
+    {
+      "direction": "bullish",
+      "start_index": 380,
+      "middle_index": 381,
+      "end_index": 382,
+      "time": "2026-03-02T07:45:00Z",
+      "zone": [
+        70.92,
+        71.78
+      ],
+      "ce": 71.35,
+      "size": 0.8599999999999994
+    },
+    {
+      "direction": "bullish",
+      "start_index": 392,
+      "middle_index": 393,
+      "end_index": 394,
+      "time": "2026-03-02T08:45:00Z",
+      "zone": [
+        73.64,
+        75.3
+      ],
+      "ce": 74.47,
+      "size": 1.6599999999999966
+    },
+    {
+      "direction": "bearish",
+      "start_index": 396,
+      "middle_index": 397,
+      "end_index": 398,
+      "time": "2026-03-02T09:05:00Z",
+      "zone": [
+        74.78,
+        75.36
+      ],
+      "ce": 75.07,
+      "size": 0.5799999999999983
+    }
+  ],
+  "warnings": [
+    "Mechanical detections require manual HTF narrative and meaningful-level validation.",
+    "A mechanical confirmed result is not a final confirmed trade setup until context is verified.",
+    "R:R is gross and excludes fees, spread, slippage, and contract specifications.",
+    "ICT labels are price-action hypotheses, not proof of institutional activity."
+  ]
+}
